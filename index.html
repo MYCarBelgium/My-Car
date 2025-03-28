@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Car Belgium - Location de voitures de luxe</title>
-    <meta name="description" content="Découvrez nos voitures de luxe disponibles à la location chez My Car | Louez au meilleur prix, réservez en ligne dès maintenant.">
+    <title>Mercedes S Guard VR 10 - My Car Belgium</title>
+    <meta name="description" content="Louez la Mercedes S Guard VR 10 avec chauffeur pour une expérience de luxe et de sécurité absolue chez My Car Belgium. Idéal pour les VIP, événements spéciaux et voyages d'affaires.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="My Car - Location de voitures de luxe">
-    <meta name="twitter:description" content="Découvrez nos voitures de luxe disponibles à la location chez My Car | Louez au meilleur prix, réservez en ligne dès maintenant.">
-    <meta name="twitter:image" content="att.2ywwN5fcddmPHAoGDgKVnHqhLCGRZ033JGETfcI4nN4.jpg"> <!-- Remplace par l'URL de ton logo -->
+    <meta name="twitter:title" content="Mercedes S Guard VR 10 - My Car Belgium">
+    <meta name="twitter:description" content="Louez la Mercedes S Guard VR 10 avec chauffeur pour une expérience de luxe et de sécurité absolue chez My Car Belgium.">
+    <meta name="twitter:image" content="URL_IMAGE_MERCEDES_S_GUARD">
 
     <!-- Importation des polices modernes via Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Poppins', sans-serif; /* Police moderne et légère */
+            font-family: 'Poppins', sans-serif;
             background-color: #f8f8f8;
             color: #2d2d2d;
             line-height: 1.6;
@@ -45,7 +45,7 @@
             padding: 0 20px;
         }
         header img {
-            max-width: 150px; /* Taille du logo */
+            max-width: 150px;
         }
         nav ul {
             list-style: none;
@@ -60,7 +60,7 @@
             transition: color 0.3s ease;
         }
         nav ul li a:hover {
-            color: #ff6f61; /* Couleur d'accent moderne */
+            color: #ff6f61;
         }
         .hero {
             max-width: 1200px;
@@ -69,7 +69,7 @@
             text-align: center;
         }
         .hero h1 {
-            font-family: 'Playfair Display', serif; /* Police élégante pour les titres */
+            font-family: 'Playfair Display', serif;
             font-size: 3rem;
             font-weight: 700;
             color: #1a1a1a;
@@ -81,52 +81,68 @@
             max-width: 700px;
             margin: 0 auto;
         }
-        .vehicles {
+        .vehicle-section {
             max-width: 1200px;
             margin: 0 auto;
             padding: 80px 20px;
             text-align: center;
         }
-        .vehicles h2 {
+        .vehicle-section h2 {
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 40px;
         }
-        .vehicle-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+        .vehicle-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
         }
-        .vehicle-card {
-            background-color: #fff;
+        .vehicle-image img {
+            max-width: 100%;
             border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        .vehicle-card:hover {
-            transform: translateY(-5px);
+        .vehicle-description {
+            max-width: 500px;
+            text-align: left;
         }
-        .vehicle-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .vehicle-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin: 15px 0 5px;
-        }
-        .vehicle-card p {
-            font-size: 0.9rem;
+        .vehicle-description p {
+            font-size: 1rem;
             color: #666;
-            margin: 5px 0;
+            margin-bottom: 20px;
         }
-        .vehicle-card .price {
-            font-weight: 600;
+        .vehicle-description ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        .vehicle-description ul li {
+            font-size: 1rem;
+            color: #2d2d2d;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .vehicle-description ul li:before {
+            content: "✔";
             color: #ff6f61;
-            margin-top: 10px;
+            position: absolute;
+            left: 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e65a50;
         }
         .contact {
             background-color: #1a1a1a;
@@ -151,15 +167,6 @@
         .contact a:hover {
             text-decoration: underline;
         }
-        .social-links {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .social-links a {
-            font-size: 1rem;
-        }
         footer {
             background-color: #fff;
             padding: 20px;
@@ -180,14 +187,13 @@
     <!-- En-tête -->
     <header>
         <div class="header-container">
-            <!-- Remplace l'URL de l'image par celle de ton logo -->
-            <img src="att.2ywwN5fcddmPHAoGDgKVnHqhLCGRZ033JGETfcI4nN4.jpg" alt="My Car Logo">
+            <!-- Intégration de l'URL du logo -->
+            <img src="att.2ywwN5fcddmPHAoGDgKVnHqhLCGRZ033JGETfcI4nN4.jpg" alt="My Car Belgium Logo">
             <nav>
                 <ul>
                     <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#tarifs">Tarifs</a></li>
-                    <li><a href="#reservation">Réservez</a></li>
+                    <li><a href="#location">Nos Véhicules</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -196,57 +202,53 @@
 
     <!-- Section principale -->
     <section class="hero" id="accueil">
-        <h1>Location de voitures de luxe</h1>
+        <h1>Mercedes S Guard VR 10</h1>
         <p>
-            My Car vous offre une expérience de conduite exceptionnelle avec une flotte de véhicules haut de gamme. 
-            Que ce soit pour un événement spécial ou un voyage d’affaires, louez votre voiture de luxe dès aujourd’hui.
+            Plongez dans une expérience de luxe absolu et de sécurité sans compromis avec notre somptueuse limousine Mercedes-Benz S Guard VR 10 chez My Car Belgium.
         </p>
     </section>
 
-    <!-- Section des véhicules -->
-    <section class="vehicles" id="location">
-        <h2>Nos Véhicules</h2>
-        <div class="vehicle-grid">
-            <!-- Exemple de carte de véhicule (tu peux en ajouter ou modifier autant que tu veux) -->
-            <div class="vehicle-card">
-                <!-- Remplace l'URL de l'image par celle de la voiture -->
-                <img src="URL_IMAGE_PORSCHE" alt="Porsche Cayenne">
-                <h3>Mercedes A45 amg</h3>
-                <p>Performance et élégance pour une expérience unique.</p>
-                <p class="price">350€/jour</p> <!-- Modifie le tarif ici -->
+    <!-- Section du véhicule -->
+    <section class="vehicle-section" id="location">
+        <h2>Luxe et Sécurité pour les VIP</h2>
+        <div class="vehicle-details">
+            <div class="vehicle-image">
+                <!-- Remplace l'URL de l'image par celle de la Mercedes S Guard VR 10 -->
+                <img src="URL_IMAGE_MERCEDES_S_GUARD" alt="Mercedes S Guard VR 10">
             </div>
-            <div class="vehicle-card">
-                <!-- Remplace l'URL de l'image par celle de la voiture -->
-                <img src="URL_IMAGE_LAMBORGHINI" alt="Lamborghini Urus">
-                <h3>BMW 840d</h3>
-                <p>Classe et confort pour un évènement réussi.</p>
-                <p class="price">350€/jour</p> <!-- Modifie le tarif ici -->
+            <div class="vehicle-description">
+                <p>
+                    La Mercedes S Guard VR 10 est conçue pour offrir une protection de niveau militaire tout en vous enveloppant dans un confort inégalé. Idéale pour les déplacements prestigieux et sereins, cette limousine est parfaite pour les VIP, les événements spéciaux ou les voyages d'affaires.
+                </p>
+                <ul>
+                    <li>Protection blindée VR 10 (niveau militaire)</li>
+                    <li>Intérieur en cuir haut de gamme</li>
+                    <li>Technologie avancée pour un confort optimal</li>
+                    <li>Service avec chauffeur professionnel et discret</li>
+                    <li>Idéal pour 1 à 2 passagers</li>
+                </ul>
+                <a href="#contact" class="cta-button">Réserver Maintenant</a>
             </div>
-            <!-- Ajoute d'autres voitures ici en copiant/collant ce bloc et en modifiant les infos -->
         </div>
     </section>
 
     <!-- Section contact -->
     <section class="contact" id="contact">
         <h2>Contactez-nous</h2>
-        <p>Horaires : Lundi au Samedi, 9h - 19h</p>
-        <p>Adresse : 1000 Bruxelles - 6000 Charleroi</p>
+        <p>Disponible 24/7 pour vos besoins de transport de luxe en Belgique et au-delà.</p>
         <p>
-            Téléphone : <a href="tel:+33627140584">+32 (0)486 76 09 16</a><br>
-            Email : <a href="mailto:contact@mycarbelgium.com">contact@mycarbelgium.com</a>
+            Téléphone : <a href="tel:+32XXXXXXXXX">+32 XXX XXX XXX</a><br>
+            Email : <a href="mailto:info@mycarbelgium.be">info@mycarbelgium.be</a>
         </p>
-        <div class="social-links">
-            <!-- Remplace les liens par tes propres liens de réseaux sociaux -->
-            <a href="URL_INSTAGRAM">Instagram</a>
-            <a href="URL_TIKTOK">TikTok</a>
-            <a href="URL_SNAPCHAT">Snapchat</a>
-            <a href="URL_FACEBOOK">Facebook</a>
-        </div>
+        <p>
+            My Car Belgium<br>
+            [Adresse complète à ajouter], Bruxelles, Belgique
+        </p>
     </section>
 
     <!-- Pied de page -->
     <footer>
-        <p>©2025 — My Car Belgium — <a href="URL_MENTIONS_LEGALES">Mentions Légales</a></p>
+        <p>© 2025 — My Car Belgium — <a href="URL_MENTIONS_LEGALES">Mentions Légales</a></p>
     </footer>
 </body>
 </html>
